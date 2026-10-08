@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NovaFlow - Modern SaaS Platform</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="theme-dark">
+  <header class="site-header" aria-label="Main navigation">
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="NovaFlow Home">
+        <span class="brand-dot"></span>
+        <span class="brand-name">NovaFlow</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Site">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme" title="Toggle theme">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button id="ctaDemo" class="cta" aria-label="See demo" title="See demo">Watch Demo</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="home" class="site-content" tabindex="-1">
+    <!-- HERO -->
+    <section class="hero container" id="home-hero" aria-label="Intro">
+      <div class="hero-copy">
+        <h1 class="display">NovaFlow — Modern SaaS platform for teams</h1>
+        <p class="lead">Launch faster with unified workflows, automation, and analytics—all in one scalable solution.</p>
+        <div class="cta-row">
+          <a href="#pricing" class="btn primary">Start Free</a>
+          <a href="#features" class="btn ghost">Browse Features</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Creative illustration">
+        <!-- Inline SVG illustration -->
+        <svg viewBox="0 0 520 320" width="100%" height="100%" role="img" aria-label="Saas illustration">
+          <defs>
+            <linearGradient id="grad" x1="0" x2="1" y1="0" y2="1">
+              <stop stop-color="#7C3AED" offset="0"/>
+              <stop stop-color="#1DD1A1" offset="1"/>
+            </linearGradient>
+          </defs>
+          <rect width="520" height="320" rx="20" fill="url(#grad)" opacity="0.15"></rect>
+          <circle cx="80" cy="72" r="40" fill="#fff" opacity="0.25"></circle>
+          <circle cx="420" cy="180" r="70" fill="#fff" opacity="0.18"></circle>
+          <rect x="140" y="110" width="260" height="90" rx="14" fill="#fff" opacity="0.25"></rect>
+          <circle cx="60" cy="260" r="22" fill="#fff" opacity="0.3"></circle>
+          <rect x="260" y="50" width="160" height="20" rx="6" fill="#fff" opacity="0.3"></rect>
+        </svg>
+      </div>
+    </section>
+
+    <!-- WHY / ABOUT (kept lightweight) -->
+    <section id="about" class="section about container" aria-label="Why NovaFlow">
+      <div class="grid two-columns">
+        <div class="card glass">
+          <h2 class="section-title">Why NovaFlow?</h2>
+          <p class="muted">NovaFlow is built to help teams ship faster with a single source of truth. From onboarding to operations, it scales with your business.</p>
+          <ul class="bullets" aria-label="Key capabilities">
+            <li>Unified workflows and automation</li>
+            <li>Data-driven insights with secure access</li>
+            <li>Seamless integrations and extensibility</li>
+          </ul>
+        </div>
+
+        <div class="card glass">
+          <h2 class="section-title">Core capabilities</h2>
+          <div class="stat-row" aria-label="Key metrics">
+            <div class="stat">
+              <span class="stat-value">98%</span>
+              <span class="stat-label">Uptime</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">4.8★</span>
+              <span class="stat-label">Customer rating</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">+200%</span>
+              <span class="stat-label">Speed gain</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES (Feature Bento Grid) -->
+    <section id="features" class="section features container" aria-label="Features">
+      <div class="section-head">
+        <h2 class="section-title">Feature Bento Grid</h2>
+        <p class="muted">A compact, highly visual set of capabilities designed for speed and clarity.</p>
+      </div>
+
+      <div class="features-grid" aria-label="Feature grid">
+        <div class="tile span-2">
+          <div class="icon" aria-hidden="true">
+            <!-- simple icon -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 7h16M4 12h10M4 17h6"/>
+            </svg>
+          </div>
+          <h3>Unified Workflows</h3>
+          <p>Connect tasks, docs, and automation into one source of truth that your team can trust.</p>
+        </div>
+
+        <div class="tile">
+          <div class="icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 7h18M3 12h12M3 17h7"/>
+            </svg>
+          </div>
+          <h3>Automation Engine</h3>
+          <p>Trigger workflows with events, webhooks, and rules that scale with your process.</p>
+        </div>
+
+        <div class="tile">
+          <div class="icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 7h18M3 12h9M3 17h6"/>
+            </svg>
+          </div>
+          <h3>Intelligent Routing</h3>
+          <p>Automatically route work to the right owner with SLA and escalation policies.</p>
+        </div>
+
+        <div class="tile">
+          <div class="icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 3v18M3 12h18"/>
+            </svg>
+          </div>
+          <h3>Analytics &amp; Insights</h3>
+          <p>Actionable metrics and dashboards to drive better decisions.</p>
+        </div>
+
+        <div class="tile">
+          <div class="icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 12h16M7 8h10M7 16h6"/>
+            </svg>
+          </div>
+          <h3>Security &amp; Compliance</h3>
+          <p>Granular access controls, audit trails, and compliance-ready data handling.</p>
+        </div>
+
+        <div class="tile">
+          <div class="icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 12l6-6 4 4 6-6"/>
+            </svg>
+          </div>
+          <h3>Integrations</h3>
+          <p>Connect with your stack via native connectors and open APIs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section pricing container" aria-label="Pricing">
+      <div class="section-head" style="display:flex; align-items:center; justify-content:space-between; gap:16px;">
+        <div>
+          <h2 class="section-title" style="margin:0 0 6px;">Pricing</h2>
+          <p class="muted" style="margin:0;">Simple, predictable pricing for teams of all sizes.</p>
+        </div>
+        <div class="billing-toggle" aria-label="Billing cycle" role="group">
+          <button class="toggle-btn active" data-billing="monthly">Monthly</button>
+          <button class="toggle-btn" data-billing="yearly">Yearly</button>
+        </div>
+      </div>
+
+      <div class="pricing-grid" aria-label="Pricing plans">
+        <div class="plan-card" data-plan="starter">
+          <div class="plan-header">
+            <strong>Starter</strong>
+            <span class="badge">Most popular</span>
+          </div>
+          <div class="price" id="price-starter" aria-label="Starter price" data-monthly="19" data-yearly="190">$19 <span class="per">/mo</span></div>
+          <ul class="plan-features" aria-label="Starter features">
+            <li>Up to 5 users</li>
+            <li>2,000 actions / mo</li>
+            <li>Basic automation</li>
+            <li>Email support</li>
+          </ul>
+          <button class="btn primary" aria-label="Start Starter">Start Free</button>
+        </div>
+
+        <div class="plan-card" data-plan="growth">
+          <div class="plan-header">
+            <strong>Growth</strong>
+          </div>
+          <div class="price" id="price-growth" aria-label="Growth price" data-monthly="49" data-yearly="490">$49 <span class="per">/mo</span></div>
+          <ul class="plan-features" aria-label="Growth features">
+            <li>Up to 25 users</li>
+            <li>10,000 actions / mo</li>
+            <li>Advanced automation</li>
+            <li>Priority email support</li>
+          </ul>
+          <button class="btn primary" aria-label="Start Growth">Start Free</button>
+        </div>
+
+        <div class="plan-card" data-plan="scale">
+          <div class="plan-header">
+            <strong>Scale</strong>
+          </div>
+          <div class="price" id="price-scale" aria-label="Scale price" data-monthly="99" data-yearly="990">$99 <span class="per">/mo</span></div>
+          <ul class="plan-features" aria-label="Scale features">
+            <li>Unlimited users</li>
+            <li>30,000 actions / mo</li>
+            <li>Advanced analytics</li>
+            <li>24/7 support</li>
+          </ul>
+          <button class="btn primary" aria-label="Start Scale">Start Free</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact container" aria-label="Contact">
+      <div class="grid two-columns">
+        <div class="card glass contact-panel">
+          <h2 class="section-title">Get in touch</h2>
+          <p class="muted">Have a question or want a personalized demo? Send us a note and we’ll respond within 1 business day.</p>
+
+          <form id="contactForm" class="contact-form" autocomplete="off" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required placeholder="Your name" />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required placeholder="you@example.com" />
+            </div>
+            <div class="field">
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" placeholder="Company name" />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Tell us about your needs, timeline, and goals."></textarea>
+            </div>
+            <button type="submit" class="btn primary" aria-label="Send message">Send Message</button>
+            <p id="formStatus" class="muted" aria-live="polite" style="margin-top:8px;"></p>
+          </form>
+        </div>
+
+        <div class="card glass contact-info" aria-label="Contact info">
+          <h2 class="section-title">Contact details</h2>
+          <p class="muted">We're global and always up for a conversation.</p>
+          <ul class="contact-list" aria-label="Contact methods">
+            <li><strong>Email:</strong> hello@novaflow.dev</li>
+            <li><strong>Website:</strong> www.novaflow.dev</li>
+            <li><strong>Location:</strong> Remote • Global</li>
+          </ul>
+          <div class="socials" aria-label="Social links">
+            <a href="#" class="social" aria-label="Twitter">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43 1c-.95.56-2.01.97-3.13 1.19A4.48 4.48 0 0 0 11 5.5c0 .35.04.69.11 1.01A12.94 12.94 0 0 1 3 2.37a4.48 4.48 0 0 0-.61 2.25c0 1.54.78 2.9 1.97 3.7-.74-.02-1.44-.23-2.05-.57v.06c0 2.15 1.54 3.95 3.58 4.37-.38.1-.78.15-1.19.15-.29 0-.58-.03-.86-.08a4.5 4.5 0 0 0 4.2 3.12A9.01 9.01 0 0 1 3 19.54 12.76 12.76 0 0 0 8.29 21 13.7 13.7 0 0 0 21 9.97c0-.2 0-.39-.01-.58A9.3 9.3 0 0 0 23 3z"/>
+              </svg>
+            </a>
+            <a href="#" class="social" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v6h-4v-6a2 2 0 0 0-4 0v6h-4v-6a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+              </svg>
+            </a>
+            <a href="#" class="social" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C6.477 2 2 6.58 2 12.28c0 4.5 2.867 8.33 6.839 9.68.5.09.682-.22.682-.48 0-.24-.01-.87-.01-1.71-2.782.61-3.37-1.23-3.37-1.23-.455-1.22-1.11-1.55-1.11-1.55-.908-.62.07-.61.07-.61 1.003.07 1.53 1.05 1.53 1.05.893 1.54 2.34 1.1 2.91.84.09-.66.35-1.1.63-1.35-2.22-.26-4.55-1.18-4.55-5.26 0-1.16.41-2.11 1.09-2.86-.11-.27-.47-1.36.11-2.83 0 0 .89-.29 2.92 1.09A9.8 9.8 0 0 1 12 6.8c.9.01 1.8.13 2.64.38 2.03-1.38 2.92-1.09 2.92-1.09.58 1.47.22 2.56.11 2.83.68.75 1.09 1.7 1.09 2.86 0 4.09-2.34 5-4.57 5.25.36.3.68.89.68 1.8 0 1.3-.01 2.35-.01 2.67 0 .26.18.57.69.47C19.137 20.61 22 16.78 22 12.28 22 6.58 17.523 2 12 2z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="Footer">
+    <div class="container footer-inner">
+      <p class="muted">&copy; <span id="year"></span> NovaFlow. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#pricing" class="muted">Pricing</a>
+        <a href="#contact" class="muted">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
